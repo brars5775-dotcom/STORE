@@ -1,0 +1,120 @@
+/* style.css */
+
+
+body{
+/* Base Style */
+body {
+    background-color: #00FF00; /* Bright Green */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+/* Black Grid Box */
+.black-box {
+    background-color: #000000; /* Black */
+    padding: 10px;
+    height: 100%;
+    border-radius: 0px; /* Sharp edges for a grid look */
+    display: flex;
+    flex-direction: column;
+}
+
+/* The Compartment (Inner Box with Border) */
+.compartment {
+    border: 10px solid #00FF00; /* Green border inside the black box */
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+
+/* Grid System */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+.main-wrapper {
+     border: 500px solid;
+     padding: 10px;
+}
+
+
+.container {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    padding: 0px;
+    border: 0px solid #000000;
+    
+
+.compartment {
+    flex: 1;
+    overflow: hidden;
+    }
+
+
+
+
+/* Product Content */
+.img src: {
+    width: 50%; 
+    height: 10px;
+    background-color: #1a1a1a;
+    margin-bottom: 15px;
+    border: 1px solid #333; /* Dark compartment border for image */
+    }
+
+.gradient-text {
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #4db6ac, #aed581, #ffeb3b, #ff9800);
+  -webkit-background-clip: text; /* Clip the gradient to the text shape */
+  background-clip: text;
+  color: transparent; /* Make the actual text transparent to show the clipped background */
+  font-size: 12rem;
+  text-align: center;
+  background-size: 200% auto; /* Ensure the gradient is large enough to move */
+  animation: gradient-animation 10s linear infinite; /* Apply animation */
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; } /* Animate the background position */
+}
+
+
+
+
+.price {
+    color: #00FF00;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.price:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.affiliate-btn {
+    margin-top: auto;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.affiliate-btn:hover {
+    background-color: #00FF00;
+
+}
